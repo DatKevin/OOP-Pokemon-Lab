@@ -57,7 +57,7 @@ let deck = [
 ]
 
 //Game deals 3 random unique cards to each player
-class Game {
+class MakePlayer {
   constructor(name){
     this.name = name
     this.deck = []
@@ -80,8 +80,8 @@ class Game {
     this.deck = []
   }
 }
-let player = new Game("Dat")
-let computer = new Game("Opponent")
+let player = new MakePlayer("Dat")
+let computer = new MakePlayer("Opponent")
 
 //Start game
 //Player picks a card
