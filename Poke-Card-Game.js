@@ -132,7 +132,7 @@ var gamestart = function (){
       + "1. " + player.deck[0].name + ": " + player.deck[0].damage + " damage \n"
       + "2. " + player.deck[1].name + ": " + player.deck[1].damage + " damage \n"
       + "3. " + player.deck[2].name + ": " + player.deck[2].damage + " damage \n"
-      + "\nWhich one do you wanna play? (1, 2, or 3, any other input quits):  ", 
+      + "\nWhich one do you wanna play? (1, 2, or 3, any other input quits):  \n", 
       function(answer) {
         response = answer
 
@@ -160,7 +160,7 @@ var gamestart = function (){
       }
 
       //Showdown
-      console.log("You played " + player.currentCard[0].name + "! "
+      console.log("\nYou played " + player.currentCard[0].name + "! "
         + "It deals " + player.currentCardDamage + " damage! \n"
         + "Computer played " +  computer.currentCard[0].name + "!"
         + "It deals " + computer.currentCardDamage + " damage! \n")
@@ -179,7 +179,7 @@ var gamestart = function (){
         console.log("Player points: " + player.points + "\n")
       }
       else {
-        console.log("It's a tie! No one get's any points. \n")
+        console.log("It's a tie! No one gets any points. \n")
       }
       
       //clears the decks and deal new cards
